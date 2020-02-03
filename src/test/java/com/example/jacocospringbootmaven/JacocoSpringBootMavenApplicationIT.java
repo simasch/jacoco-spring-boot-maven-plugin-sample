@@ -11,7 +11,7 @@ class JacocoSpringBootMavenApplicationIT {
 	@Test
 	void contextLoads() {
 		var restTemplate = new RestTemplate();
-		var result = restTemplate.getForObject("http://localhost:8080/hello", String.class);
+		var result = restTemplate.getForObject("http://localhost:7777/hello", String.class);
 
 		assertThat(result).isEqualTo("{\"foo\":\"bar\"}");
 	}
